@@ -1,6 +1,7 @@
 #pragma warning(disable : 4996)
 #include "Client.h"
 
+//loopback
 //address 127.0.0.1
 //port 31337
 
@@ -72,6 +73,12 @@ Client::Client( std::string address, uint16_t port )
 			if (recvResult == SOCKET_ERROR || recvResult == 0)
 			{
 				printf("Warning: Conncet Error\n");
+			}
+			else if (buffer[0] == '$')
+			{
+				std::string userInput = buffer;
+				if (userInput == "$exit")
+					return;
 			}
 			else
 			{

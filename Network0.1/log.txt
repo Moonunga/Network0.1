@@ -1,0 +1,16 @@
+Listening...
+Initializing Success
+New client connected
+New client connected
+New client connected
+New client connected
+New client connected
+Client1has register
+Message received: hi
+Message received: hi
+Message received: moon
+Client2has register
+Client3has register
+Message received: moon
+Client disconnected
+Message received: hi

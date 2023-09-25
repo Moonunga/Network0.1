@@ -7,6 +7,7 @@
 #include <iostream>
 #include <vector>
 #include <string> 
+#include <fstream>
 
 class Server
 {
@@ -50,7 +51,7 @@ private:
 	std::vector<int> userlist;
 
 public:
-	Server(uint16_t port);
+	Server(uint16_t port, int amount); 
 	void stop();
 
 };
